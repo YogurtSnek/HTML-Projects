@@ -1,0 +1,19 @@
+h1 {
+    color:tomato;
+}
+
+p {
+    color: purple;
+}
+
+a {
+    color: green;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+div h1 {
+    color: red
+}

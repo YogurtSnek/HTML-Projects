@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Formulario Basico en HTML</title>
+    </head>
+
+    <body>
+        <h1>Introduccion a Formularios en HTML</h1>
+        <form>
+            Nombre: <input type="text" name="Nombre" placeholder="Escribe tu nombre de pila">
+            <br>
+            Apellido: <input type="text" name="Apellido" placeholder="Escribe tus apellidos">
+            <br>
+            Sexo: <label for="sexo">Femenino</label><input type="radio" name="sexo" value="Femenino">
+            <label for="sexo">Masculino</label> <input type="radio" name="sexo" value="Femenino">
+            <br>
+            Que tipo de vehiculos usas?
+            <br><input type="checkbox" id="vehiculo" name="vehiculo1" value="bicicleta"><label for="vehiculo">Tengo Bicicleta</label>
+            <br><input type="checkbox" id="vehiculo" name="vehiculo2" value="motocicleta"><label for="vehiculo">Tengo Motocicleta</label>
+            <br><input type="checkbox" id="vehiculo" name="vehiculo3" value="automovil"><label for="vehiculo">Tengo Automovil</label>
+            <br><input type="checkbox" id="vehiculo" name="vehiculo4" value="tractor"><label for="vehiculo">Tengo Tractor</label>
+            <br><input type="checkbox" id="vehiculo" name="novehiculo" value="no hay"><label for="vehiculo">No Tengo</label>
+            <br><br>
+
+            Escriba un comentario:<br>
+            <textarea name="comentario" rows="5" cols="50">
+                Comente lo que desees
+            </textarea>
+            <br><br>
+            Que navegador de internet utilizas?
+            <input list="navegadores">
+            <datalist id="navegadores">
+                <option value="Microsoft Edge">
+                <option value="Opera GX">
+                <option value="Google Chrome">
+            </datalist>
+            <br>
+            <label for="psw">Contraseña: </label><br>
+            <input type="password" name="psw" placeholder="Escribe aqui tu contraseña">
+
+            <input type="submit" value="Enviar">
+            <input type="button" value="Ok" onclick="alert('a QUE Chingon')">
+            <br><br>
+            <input type="reset" value="Cancelar">
+            <br>
+            <label for="colors">Cual es tu color favorito</label>
+            <input type="color" name="colors"><br><br>
+
+            <label for="fechaNac">Tu fecha de nacimiento es:</label>
+            <input type="date" id="fechaNac" name="fechaNac"><br>
+
+            <label for="email">Tu email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="foto">foto:</label>
+            <input type="file" alt="submit" id="foto" name="foto"><br>
+
+            <label for="cant">cantidad:</label>
+            <input type="number" alt="numero a seleccionar" min="0" max="10" placeholder="Solo nums."><br>
+
+            <label for="volumen">Volumen:</label>
+            <input type="range" min="0" max="50"><br>
+
+            <label for="encontrar">Buscar en Google:</label>
+            <input type="search" name="encontrar"><br>
+
+            <label for="tel">Numero Telefonico:</label>
+            <input type="tel" name="tel" pattern="686-[0-9]{3}-[0-9]{4}" value="686-"><br>
+
+            <label for="hora_cita">Reservar ahora:</label>
+            <input type="time" name="hora_cita"><br>
+
+            <label for="DirWeb">Home Page:</label>
+            <input type="url" name="DirWeb"><br>
+
+            <label itemtype="semana">Selecciona la semana:</label>
+            <input type="week" name="semana"><br>
+
+            <!--
+                Atributos para input:
+                    - value: Determinar el valor inicial del dato o el desplegar un dato
+                    - readonly: Dato no modificable
+                    - disabled: Dato desactivado
+                    - size: Tamaño del campo
+                    - maxlength: Limite de caracteres a capturar en dato
+                    - min y max: Limites minimos y maximos en datos
+                    - multiple: Permite ingresar multiples valores a la vez
+                    - pattern: Expresion regular para ingresar datos
+                    - placeholder: Mensaje en el campo que no modifica el valor del dato
+                    - required: Dato requerido, forzando a que haya algo en el
+                    - step: Especifica cuanto es el incremento o decremento
+                    - autofocus: Especifica el orden de ingreso de los datos
+                    - width y height: Medida de altura y ancho del campo
+                    - list: Refiere que se utilizara una lista de opciones a seleccionar
+                    - autocomplete: Determina si el browser sugiera completar el ingreso del dato
+            -->
+        </form>
+        <!--
+            Atributos para form
+                - action: Especifica el url del programa receptor de datos capturados
+                    ejemplo: <form action="inscripcion.php">
+                - method: Especifica el metodo de transferencia de datos "GET" O "POST"
+                    ejemplo: <form action="inscripcion.php" method="GET">
+        -->
+    </body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario: Anime Taste</title>
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <style>
+        body {
+            font-family: 'Sofia'; font-size: 22px;
+            color: white;
+        }
+        </style>
+        </head>
+    <body bgcolor="#060238">
+        <h1 align="center">Anime Taste</h1>
+        <div style="text-align: center; margin: auto; width: fit-content;">
+            <form action="#" method="GET">
+                <fieldset style="width: 600px;">
+                    <legend>General Information</legend>
+                    Your Name: <input type="text" name="Nombre" placeholder="First Name">
+                    <br>
+                    Gender: 
+                    <input type="radio" name="gend" value="Femenine"><label for="sexo">Femenine</label>
+                    <input type="radio" name="gend" value="Masculine"><label for="sexo">Masculine</label> 
+                    <input type="radio" name="gend" value="Other"><label for="sexo">Other:</label> <input type="text">
+                    <br>
+                    Phone Number: <input type="tel" name="phone" id="phone" pattern="(686-)^[0-9]{3}-[0-9]{4}" placeholder="686-XXX-XXXX">
+                </fieldset>
+
+                <br>
+
+                <fieldset style="width: 600px;">
+                    <legend>Questions</legend>
+                    <b>1.-</b> Which of these anime have you watched?
+                    <div style="text-align:left; width: 420px; margin: auto; ">
+                        <input type="checkbox" id="anime" name="anime1" value="Dragon Ball"><label for="anime">Dragon Ball</label>
+                        <br><input type="checkbox" id="anime" name="anime2" value="Konosuba"><label for="anime">Konosuba</label>
+                        <br><input type="checkbox" id="anime" name="anime3" value="Miss Kobayashi's Dragon Maid"><label for="anime">Miss Kobayashi's Dragon Maid</label>
+                        <br><input type="checkbox" id="anime" name="anime4" value="Chainsaw Man"><label for="anime">Chainsaw Man</label>
+                        <br><input type="checkbox" id="anime" name="noanime" value="None"><label for="anime">None</label>
+                    </div>
+                    <br><br>
+                    <b>2.-</b> Which of these is your preferred genre in anime?
+                    <input list="genres">
+                    <datalist id="genres">
+                        <option value="Action">
+                        <option value="Isekai">
+                        <option value="Romance">
+                        <option value="Fantasy">
+                    </datalist>
+                    
+                    <br><br>
+                    <b>3.-</b> What's the name of your favorite anime?
+                    <input type="text" name="favorite">
+                    
+                    <br><br>
+                    <b>4.-</b> How many hours do you spend watching anime?
+                    <br>Approx. <input type="number" name="hours" id="hours" min="1" max="20"> hours
+
+                    <br><br>
+                    <b>5.-</b> Please leave a comment down below!
+                    <br>
+                    <textarea name="comments" id="comments" cols="50" rows="5">
+            Comment what you liked about it!</textarea>
+                </fieldset>
+
+                <input type="submit" value="Submit your information">
+            </form>
+        </div>
+        
+    </body>
+</html>

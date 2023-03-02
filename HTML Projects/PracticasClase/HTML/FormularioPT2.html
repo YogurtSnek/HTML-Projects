@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios en HTML</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+        <h1>Formularios en HTML</h1>
+
+        <h2>Elementos Basicos</h2>
+        <form action="#" method="GET" oninput="result.value=parseInt(valor1.value)+parseInt(valor2.value)">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre: </label><input type="text" name="nombre"> <input type="button" value="Submit"><br>
+            <label for="psw">Password: </label><input type="password" name="psw"> <input type="button" value="Reset"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Elementos de Lista</legend>
+            <label for="Autos">Selecciona la marca de automovil que guste:</label>
+                <select id="Autos" name="autos">
+                    <option value="Audi">Audi</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="BMW">BMW</option>
+
+                </select>
+                <button type="button" onclick='alert("Formularios wow")'>Click Pls</button>
+                <br><label for="sistoperativos">Sistemas Operativos</label>
+                <input list="sistoperativos">
+                    <datalist id="sistoperativos">
+                        <option value="windows">windows</option>
+                        <option value="Linux">Linux</option>
+                        <option value="MacOS">MacOS</option>
+                    </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Campos Calculados</legend>
+            <label for="valor1">Dato 1</label>
+            <input type="range" id="valor1" name="valor1" value="50">100 + 
+            <label for="valor2">Dato 2:</label>
+            <input type="number" id="valor2" name="valor2" value="50"> =
+            <output name="result" for="valor1 valor2"></output>
+            <input type="submit" value="Dale">
+        </fieldset>
+       
+    </body>
+</html>
