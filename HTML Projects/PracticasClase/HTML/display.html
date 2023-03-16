@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        * {
+            margin: 5px;
+        }
+
+        div {
+            border: 5px solid grey;
+        }
+        div.estatico {
+            position: static;
+        }
+        div.relative {
+            position: relative;
+            left: 50px;
+            top:20px
+        }
+        div.personal {
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+            width:50%;
+        }
+        div.absolute {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width:50%;
+        }
+        div.pegajoso {
+            position: sticky;
+            top: 10px; 
+        }
+        a {
+            border: 5px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <div> Div Normal </div>
+    <!--Display: none desaparece las cosas, dejando su espacio para otr cosa, el visibility: hidden 
+    retiene el espacion que ocupa-->
+    <div style="display: inline-block;"> Div con display inline block</div>
+    <br>
+    <a href="#" style="visibility: visible;">Enlace Normal</a>
+    <a href="#" style="display: block;">Enlace con display block</a>
+    <div class="static"> Div con display inline block</div>
+    <div class="relative"> Div con display inline block</div>
+    <div class="absolute"> Div con display inline block</div>
+    <div class="pegajoso"> Div con pegaodod</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formato de texto con CSS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .ali_der{
+                text-align: right;
+            }
+
+            .ali_cen{
+                text-align: center;
+            }
+
+            .ali_izq{
+                text-align: left;
+            }
+
+            .ali_jus{
+                text-align: justify;
+            }
+
+            /*Se alinea el último renglón*/
+            .ali_ult{
+                text-align-last: center;
+            }
+
+            .reversa{
+                /*rtl = right to left
+                  ltr = left to right*/
+                direction: rtl;
+                unicode-bidi: bidi-override;
+            }
+
+            img#linea_base{
+                vertical-align: baseline;
+            }
+
+            img#superior{
+                vertical-align: text-top;
+            }
+
+            img#fondo{
+                vertical-align: text-bottom;
+            }
+
+            img#sub{
+                vertical-align: sub;
+            }
+
+            img#sup{
+                vertical-align: super;
+            }
+
+            #linea_sup{
+                text-decoration-line: overline;
+                text-decoration-color: rgb(70, 230, 171);
+                text-transform: uppercase;
+                text-indent: 50px;
+                letter-spacing: 5px;
+
+                /*puede ser positivo(más espacio) o negativo(menos espacio)*/
+                word-spacing: 2px;
+
+                line-height: 2.5;
+                text-shadow: 2px 1px 1px rgb(255, 187, 0);
+            }
+
+            #linea_cent{
+                text-decoration-line: line-through;
+                text-decoration-color: rgb(139, 62, 81);
+                text-decoration-style: double;
+                text-transform: lowercase;
+            }
+
+            #linea_inf{
+                text-decoration-line: underline;
+                text-decoration-color: rgb(157, 170, 64);
+                text-decoration-thickness: 4px;
+                text-transform: capitalize;
+            }
+
+            #linea_mix{
+                text-decoration-line: overline line-through;
+                text-decoration-color: rgb(121, 51, 186);
+                text-decoration-style: dotted;
+                text-decoration-thickness: 2px;
+            }
+
+            a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formato del texto</h1>
+
+        <h2>Color del texto</h2>
+        <div style = "color: rgb(112, 2, 2);">El color del texto se utiliza la propiedad "color"</div>
+
+        <h2>Alineación del texto</h2>
+        <p class = "ali_izq">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Labore quasi inventore alias laborum. Porro quas in harum sit, nam cumque 
+            iusto suscipit eos non magnam delectus, voluptatem fugit saepe error.</p>
+
+        <p class = "ali_der">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Repellendus officia aspernatur labore ducimus optio nisi totam perferendis 
+            facilis aut, dolor mollitia. Rerum fuga hic maiores laboriosam. 
+            Eligendi obcaecati minus laudantium.</p>
+
+        <p class = "ali_cen">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Veniam, corrupti doloribus. Mollitia, iure, sunt quod corrupti ex dolores et 
+            unde reprehenderit nostrum facilis assumenda quasi cumque suscipit ullam! Alias, aperiam.</p>
+
+        <p class = "ali_jus">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Sequi nobis doloribus iure? Architecto fugit id similique numquam deleniti non suscipit, 
+            in perspiciatis repellendus autem ab, impedit temporibus placeat dolorum ipsam.</p>
+
+        <p class = "ali_ult">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eius voluptas et vitae possimus ipsam totam alias aliquam animi, repellat 
+            voluptates cum officiis, incidunt tempore deserunt, mollitia ea soluta quis unde?</p>
+        
+        <p class = "reversa">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum inventore totam qui aliquid exercitationem nesciunt nam eligendi et, 
+            harum repudiandae maxime corrupti, tempore aliquam repellendus voluptates, 
+            magni iure rerum itaque.</p>
+
+
+        <div style = "color: rgb(223, 68, 63);"><img src = "https://wallpaperaccess.com/full/6055055.jpg" width = "70" id = "linea_base">
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nesciunt, quia! Rem doloremque sint odio repudiandae omnis ut 
+            vitae doloribus veritatis voluptas, cum, ratione quod iste, distinctio laudantium 
+            magnam facilis harum!</div>
+        <br>
+        
+        <div style = "color: rgb(225, 144, 58);"><img src = "https://wallpaperaccess.com/full/6055055.jpg" width = "70" id = "superior">
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nesciunt, quia! Rem doloremque sint odio repudiandae omnis ut 
+            vitae doloribus veritatis voluptas, cum, ratione quod iste, distinctio laudantium 
+            magnam facilis harum!</div>
+        <br>
+
+        <div style = "color: rgb(218, 212, 32);"><img src = "https://wallpaperaccess.com/full/6055055.jpg" width = "70" id = "fondo">
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nesciunt, quia! Rem doloremque sint odio repudiandae omnis ut 
+            vitae doloribus veritatis voluptas, cum, ratione quod iste, distinctio laudantium 
+            magnam facilis harum!</div>
+        <br>
+
+        <div style = "color: rgb(115, 210, 43);"><img src = "https://wallpaperaccess.com/full/6055055.jpg" width = "70" id = "sub">
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nesciunt, quia! Rem doloremque sint odio repudiandae omnis ut 
+            vitae doloribus veritatis voluptas, cum, ratione quod iste, distinctio laudantium 
+            magnam facilis harum!</div>
+        <br>
+
+        <div style = "color: rgb(26, 169, 212);"><img src = "https://wallpaperaccess.com/full/6055055.jpg" width = "70" id = "sup">
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nesciunt, quia! Rem doloremque sint odio repudiandae omnis ut 
+            vitae doloribus veritatis voluptas, cum, ratione quod iste, distinctio laudantium 
+            magnam facilis harum!</div>
+        
+        <p id = "linea_sup"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo expedita 
+            itaque. Molestiae quasi, alias quos blanditiis rem corporis praesentium 
+            ipsa maiores nemo recusandae quia dignissimos, doloremque officiis, quibusdam adipisci.</p>
+        
+        <p id = "linea_cent"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo expedita 
+            itaque. Molestiae quasi, alias quos blanditiis rem corporis praesentium 
+            ipsa maiores nemo recusandae quia dignissimos, doloremque officiis, quibusdam adipisci.</p>
+        
+        <p id = "linea_inf"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo expedita 
+            itaque. Molestiae quasi, alias quos blanditiis rem corporis praesentium 
+            ipsa maiores nemo recusandae quia dignissimos, doloremque officiis, quibusdam adipisci.</p>
+        
+        <p id = "linea_mix"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo expedita 
+            itaque. Molestiae quasi, alias quos blanditiis rem corporis praesentium 
+            ipsa maiores nemo recusandae quia dignissimos, doloremque officiis, quibusdam adipisci.</p>
+        
+        <a href="#">Esta es una liga</a>
+                
+            
+    </body>
+</html>

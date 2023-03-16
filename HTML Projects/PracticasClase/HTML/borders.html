@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de bordes</title>
+    <style>
+        * {
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            border: 5px groove royalblue;
+            text-align: center;
+            width: 500px;
+            border-radius: 25px;
+            background-image: linear-gradient(to right top, blue, cyan, lightblue);
+        } 
+        #bottom {
+            border-bottom: 3px inset pink;
+        }
+        #bsup {
+            border-top: 5px outset green;
+            outline: 3px dotted grey;
+        }
+        #bder {
+            border-right: 5px groove red;
+        }
+        #bleft {
+            border-left: 5px groove red;
+        }
+        body {
+            background-image: radial-gradient(to bottom, antiquewhite, beige, skyblue);
+        }
+    </style>
+</head>
+<body>
+
+    <!--Padding: Borde hacia adentro
+    Margin: Borde hacia afuera-->
+    <center><h1>Bordes con css</h1></center>
+    
+    <div id="bottom">Bloque 1</div>
+    <div id="bsup">Bloque 2</div>
+    <div id="bder">Bloque 3</div>
+    <div id="bleft">Bloque 4</div>
+</body>
+</html>
