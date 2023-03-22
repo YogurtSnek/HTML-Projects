@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo clases y elementos</title>
+    <style>
+        div {
+            background-color: burlywood; border: 3px solid brown
+        }
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: grey
+        }
+        a:active {
+            color: royalblue
+        }
+        div:hover {
+            background-color:aqua;
+            border-color: blue;
+        }
+        p:first-child {
+            color: violet;
+        }
+        p.parrafo::first-line {
+            color:aquamarine
+        }
+        p.parrafo::first-letter {
+            color: red;
+        }
+        h2::after {
+            content: url("Electro.png");
+        }
+        ::marker {
+            font-size: 20px;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo clases y elementos en css/h1>
+        <h2>pseudo clases</h2>
+            <p>el siguiente ejemplo muestra como utilizar las pseudo clases con un elemento de hyper
+                vinculo
+            </p>
+            <a href="#">Liga con diferentes comportamientos</a>
+            <div> lol que cool
+                <p>mira que chido</p>
+            </div>
+        
+        <br>
+
+        <h2>pseudo elementos</h2>
+        <p class="parrafo">podremos cambiar cosas especificas en un elemento</p>
+
+        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dignissimos, molestiae voluptates praesentium atque itaque vero unde pariatur, natus porro iusto harum laboriosam officiis explicabo reprehenderit ullam nulla suscipit rem?</p>
+
+
+
+
+
+</body>
+</html>

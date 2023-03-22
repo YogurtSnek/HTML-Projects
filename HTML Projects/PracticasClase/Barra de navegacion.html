@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegacion</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            position: fixed;
+            background-color: aquamarine;
+            overflow: hidden;
+
+        }
+
+        li {
+            border: 1px solid rgb(255, 255, 255);
+            border-left: none;
+            float: left;
+        }
+
+        li:last-child {
+            border-right: none;
+            border-left: 1px solid white;
+            float: right;
+        }
+
+        li a{
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: rgb(56, 56, 56);
+            color: white;
+        }
+
+        li a.active {
+            background-color: blue;
+            color: white;
+        }
+
+        p {
+            font-size: .5in;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="active">Hello</a></li>
+        <li><a href="#">Is</a></li>
+        <li><a href="#">it</a></li>
+        <li><a href="#">me</a></li>
+        <li><a href="#">You're lookin for</a></li>
+    </ul>
+
+    <h2>Irrelevant text</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora accusamus provident. Voluptatibus vel commodi itaque excepturi maiores atque, tempore, tenetur quasi cumque nostrum repellendus harum, ex repellat? Quaerat, veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci iste aut id placeat nam saepe eaque beatae sint tempore quidem autem eos, ullam animi ex officia incidunt repudiandae deleniti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates dolore quisquam dolor nesciunt culpa esse perferendis quibusdam! Et corporis ad voluptate ullam accusantium temporibus. Quidem, officia. Blanditiis cupiditate similique praesentium? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis consequatur incidunt repellendus sequi! Expedita, minus facere iusto ipsum eveniet quasi, veritatis, eius dolore sapiente rerum perferendis asperiores dicta voluptatum sequi.</p>
+
+
+
+</body>
+</html>
