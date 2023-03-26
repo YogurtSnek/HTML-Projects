@@ -1,0 +1,150 @@
+/*--------------------------------Basic Settings---------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("Assets/snowfall.gif");
+    background-color: rgb(138, 212, 255);
+   
+}
+
+/*--------------------------------Header---------------------------------*/
+
+.HeadContainer {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.Header {
+    padding: 5px;
+    text-align: center;
+    background: url("Assets/CryoBG.jpg") no-repeat center;
+    background-size: cover;
+    border: rgb(248, 202, 74) 3px;
+    border-style: none solid none solid;
+    font-family: 'Dancing Script', cursive;  
+}
+
+.Header h2 {
+    font-size: 2.3em;
+    color: #b2d1fd;
+}
+
+.Header h1 {
+    font-size: 3.2em;
+    color: rgb(43, 43, 43);
+}
+
+/*--------------------------------Main Page Sticker---------------------------------*/
+
+.Sticker {
+    top: 1.3em;
+    left: 2em;
+    position: absolute;
+}
+
+/*--------------------------------Navigation Bar---------------------------------*/
+
+#NavBar {
+    z-index: 1000;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(43, 43, 43);
+    border: rgb(248, 202, 74) 3px;
+    border-style: none solid solid solid;
+    border-radius: 0px 0px 25px 25px;
+    text-align: center;
+}
+
+#NavBar ul {
+    display: inline-table;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 20em;
+}
+
+
+#NavBar li a {
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#NavBar li a:hover {
+    background-color: white;
+    color: rgb(43, 43, 43);
+}
+
+#NavBar li a.active {
+    background-color: rgb(248, 202, 74);
+    color: rgb(43, 43, 43);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*--------------------------------Main Content---------------------------------*/
+
+.BodyContainer {
+    margin: 0;
+    padding: 4px;
+    position: relative;
+    width: 100%;
+    color: rgb(43, 43, 43);
+    font-family: 'Kaushan Script', cursive;
+}
+
+.BodyContainer p {
+    font-size: 1.3em;
+}
+
+.sticky + .BodyContainer {
+    padding-top: 60px;
+}
+
+.Column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.Lateral-Column {
+    float: left;
+    width: 30%;
+}
+
+.Middle-Column {
+    float: left;
+    width: 40%;
+}
+
+.Row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*--------------------------------Foot Notes---------------------------------*/
+
+.FootContainer {
+    font-family: 'Karma', serif;
+    padding: 12px 15px;
+    border: rgb(248, 202, 74) 3px;
+    border-style: solid solid none solid;
+    border-radius: 50px 50px 0px 0px;
+    background-color: rgb(43, 43, 43);
+    color: #b2d1fd;
+    text-align: center;
+    
+}

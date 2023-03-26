@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de la Pagina Web</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .Encabezado {
+            padding: 20px;
+            background-color: rgb(71, 172, 255);
+            text-align: center;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            list-style-type: none;
+            position: sticky;
+            top: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        li a {
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white;
+        }
+
+        li:last-child {
+            float: right;
+        }
+
+        .columna {
+            float: left;
+            width: 31.1%;
+            padding: 15px;
+        }
+        .columna.lateral {
+            width: 20%;
+        }
+        .columna.media {
+            width: 50%;
+        }
+        .renglon::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .pie {
+            background-color: black;
+            color: white;
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        @media screen and (max-width:600px) {
+            .columna {
+                width: 100%;
+            }
+            .columna.lateral {
+                width: 100%;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="Encabezado">
+        <h1>Esta es el area de Encabezado del documento</h1>
+    </div>
+    <div class="navegar-barra">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Informacion</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <div class="renglon">
+            <div class="columna">
+                <h2>Columna 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, numquam, nisi, deserunt delectus
+                    dignissimos repellat ea animi quam suscipit itaque provident nihil voluptates aliquam adipisci? In
+                    nostrum odit dignissimos ipsa?</p>
+            </div>
+            <div class="columna">
+                <h2>Columna 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, cupiditate architecto
+                    laboriosam alias ut porro autem explicabo nam corporis voluptatum nihil quis maiores quaerat vero
+                    quod, consequuntur ad expedita eaque.</p>
+            </div>
+            <div class="columna">
+                <h2>Columna 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum vel recusandae quia
+                    laboriosam quibusdam! Culpa, tenetur! Laudantium sequi deleniti qui, temporibus minima numquam totam
+                    odio nesciunt, alias sit officiis.</p>
+            </div>
+        </div>
+        <div class="renglon">
+            <div class="columna">
+                <h2>Columna 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, numquam, nisi, deserunt delectus
+                    dignissimos repellat ea animi quam suscipit itaque provident nihil voluptates aliquam adipisci? In
+                    nostrum odit dignissimos ipsa?</p>
+            </div>
+            <div class="columna">
+                <h2>Columna 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, cupiditate architecto
+                    laboriosam alias ut porro autem explicabo nam corporis voluptatum nihil quis maiores quaerat vero
+                    quod, consequuntur ad expedita eaque.</p>
+            </div>
+            <div class="columna">
+                <h2>Columna 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum vel recusandae quia
+                    laboriosam quibusdam! Culpa, tenetur! Laudantium sequi deleniti qui, temporibus minima numquam totam
+                    odio nesciunt, alias sit officiis.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="renglon">
+        <div class="columna lateral">
+            <h2>Columna 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, numquam, nisi, deserunt delectus
+                dignissimos repellat ea animi quam suscipit itaque provident nihil voluptates aliquam adipisci? In
+                nostrum odit dignissimos ipsa?</p>
+        </div>
+        <div class="columna media">
+            <h2>Columna 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, cupiditate architecto
+                laboriosam alias ut porro autem explicabo nam corporis voluptatum nihil quis maiores quaerat vero
+                quod, consequuntur ad expedita eaque.</p>
+        </div>
+        <div class="columna lateral">
+            <h2>Columna 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum vel recusandae quia
+                laboriosam quibusdam! Culpa, tenetur! Laudantium sequi deleniti qui, temporibus minima numquam totam
+                odio nesciunt, alias sit officiis.</p>
+        </div> 
+    </div>
+    <div class="renglon">
+        <div class="columna lateral">
+            <h2>Columna lateral</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ea magnam, eligendi repellendus autem numquam,
+                hic consequuntur facilis, at doloribus aperiam animi dolorem dicta quasi vitae repellat eum repudiandae
+                veniam.</p>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div class="pie">
+        <p>Esta es el area de pie de Pagina</p>
+        <address>Autor: <b>Johan Gurrola</b></address>
+    </div>
+</body>
+
+</html>
