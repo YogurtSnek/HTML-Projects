@@ -1,0 +1,65 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>Ayaka Showcase</title>
+</head>
+<body>
+    <div class="HeadContainer">
+        <div class="Header">
+            <h2>Frostflake Heron</h2>
+            <h1>Kamisato Ayaka</h1>
+        </div>
+        <div class="Sticker">
+            <a href="MainPage.html"><img src="Assets/AyakaSip.png" alt="Ayaka sipping her tea" width="180"></a>
+        </div>
+        <div id="NavBar">
+            <ul>
+                <li><a href="Description.html">Description</a></li>
+                <li><a href="Abilities.html">Abilities</a></li>
+                <li><a href="ingame.html">In-Game Look</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+
+    <div class="BodyContainer">
+        <center>
+        <h2>"There's a pleasant breeze and glorious sunshine... So, where shall we go for a walk?"</h2>
+        <p>Now please lay back and enjoy a small gameplay showcase of the Shirasagi Himegimi <br>
+        <b>Kamisato Ayaka!</b></p>
+        <iframe width="1317" height="612" src="https://www.youtube.com/embed/9WgUjbcJ3m4" title="Genshin Impact - Official Kamisato Ayaka Gameplay Overview Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </center>
+    </div>
+
+    
+
+    <div class="FootContainer">
+        <p>I do not own any of the art shown here and you should play genshin impact it's fun</p>
+        <address>Author: Johan Gurrola</address>
+    </div>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("NavBar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+    
+</body>
+</html>

@@ -97,26 +97,28 @@ body {
 
 .BodyContainer {
     margin: 0;
-    padding: 4px;
+    padding: 16px;
     position: relative;
     width: 100%;
     color: rgb(43, 43, 43);
     font-family: 'Kaushan Script', cursive;
 }
 
+.ExtraPadding + .BodyContainer{
+    padding-top: 60px;
+}
+
 .BodyContainer p {
     font-size: 1.3em;
 }
 
-.sticky + .BodyContainer {
-    padding-top: 60px;
-}
 
 .Column {
     float: left;
     width: 33.33%;
     padding: 15px;
 }
+
 
 .Lateral-Column {
     float: left;

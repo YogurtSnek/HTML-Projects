@@ -37,7 +37,7 @@
 
         <div class="Row">
             <div class="Lateral-Column">
-                <img src="Assets/AyakaMask.webp" alt="Ayaka staring at a festival mask with a smile" width="60%"  style="z-index: 10; border-radius: 10px; border: rgb(187, 46, 152) inset 3px;">
+                <img src="Assets/AyakaMask.webp" alt="Ayaka staring at a festival mask with a smile" width="60%"  style="box-shadow: 10px 10px 5px rgb(96, 179, 194); z-index: 10; border-radius: 10px; border: rgb(187, 46, 152) inset 3px;">
                 <p style="width: 50%;">
                     Fun fact: During Ayaka's arduos training, she was able to to defeat an opponent with a single strike of her 
                     elegant blade. In that instant, as she stood in the middle of the dojo, icy flowers condensed all about her. 
@@ -96,14 +96,17 @@
         window.onscroll = function() {myFunction()};
         
         var navbar = document.getElementById("NavBar");
+        var body = document.getElementsByClassName("BodyContainer");
         var sticky = navbar.offsetTop;
         
         function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+            body.classList.add("ExtraPadding");
+        } else {
             navbar.classList.remove("sticky");
-          }
+            body.classList.remove("ExtraPadding");
+        }
         }
     </script>
     
