@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid con CSS</title>
+    <style>
+        .elemento1 { grid-area: header;}
+        .elemento2 { grid-area: menu;}
+        .elemento3 { grid-area: main;}
+        .elemento4 { grid-area: right;}
+        .elemento5 { grid-area: footer;}
+
+        .gridContenedor {
+            display: grid;
+            grid-template-areas: 
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+            gap: 10px;
+            background-color: gray;
+            padding: 10px;
+        }
+
+        .gridContenedor > div {
+            background-color: aliceblue;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            border: black solid 3px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Propiedad Grid Area</h1>
+    <p>Se puede establecer un area en regilla y configurar cada elemento <br>
+    este ejemplo contiene 6 columnas y 3 renglones</p>
+
+    <div class="gridContenedor">
+        <div class="elemento1">
+            Header
+        </div>
+        <div class="elemento2">
+            Menu
+        </div>
+        <div class="elemento3">
+            Principal
+        </div>
+        <div class="elemento4">
+            Derecha
+        </div>
+        <div class="elemento5">
+            Pie
+        </div>
+    </div>
+</body>
+</html>
