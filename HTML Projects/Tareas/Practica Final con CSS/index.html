@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="shortcut icon" href="Assets/IconPhantomThievesEdit.png" type="image/x-icon">
+    <title>Take Your Heart!</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+
+        @keyframes spinTheCard {
+            from {
+                transform: scale(5) rotate(-3600deg);
+            }
+
+            to {
+                transform: scale(1) rotate(8deg);
+            }
+        }
+
+
+        .CallingCard {
+            /*Positioning*/
+            position: absolute;
+            top: 23%;
+            left: 30%;
+            
+        
+            /*Dimensions*/
+            width: 40%;
+            height: 48%;
+
+            /*Background*/
+            background-image: url(Assets/CallingCardBG.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            /*Misc*/
+            border: 1px solid rgb(0, 0, 0);
+            overflow: hidden;
+
+            /*Animation Effects*/
+            transform: rotate(8deg);
+            
+            animation-name: spinTheCard;
+            animation-duration: 3.4s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1; 
+            
+            transition: transform .6s;
+        
+        }
+
+        .CallingCard :hover {
+            transform: scale(1.25);
+        }
+
+        .CallingCard .Logo :hover {
+            transform: scale(1.15);
+            
+        }
+
+
+
+        .CallingCard .Logo {
+            padding: 30px 0;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="CallingCard">
+        <div class="Logo">
+            <img src="Assets/Phantom-Thieves-of-Hearts-Logo.png" alt="Logo of the Phantom Thieves, depicting a tophat
+             with a mask below it and the phrase: Take Your Heart!" width="300px">
+        </div>
+    </div>
+</body>
+</html>

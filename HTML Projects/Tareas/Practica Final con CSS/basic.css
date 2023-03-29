@@ -1,0 +1,10 @@
+/* General Settings */
+* { 
+    box-sizing: content-box;
+}
+
+body {
+    background-image: url(Assets/Persona5BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
