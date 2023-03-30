@@ -15,11 +15,46 @@
 
         @keyframes spinTheCard {
             from {
-                transform: scale(5) rotate(-3600deg);
+                transform: scale(5) rotate(-1700deg);
+                box-shadow: 0;
             }
 
             to {
                 transform: scale(1) rotate(8deg);
+                box-shadow: 4px 4px rgb(14, 13, 13);
+            }
+        }
+
+        @keyframes daggerThrow {
+            0% {
+                transform: translate(0, 0) skew(0,0);
+            }
+
+            85% {
+                transform: translate(-280%, 150%) skew(5deg);
+            }
+
+            88.5% {
+                transform: translate(-280%, 150%) skew(2.5deg);
+            }
+
+            90% {
+                transform: translate(-280%, 150%) skew(0deg);
+            }
+            92.5% {
+                transform: translate(-280%, 150%) skew(-2.5deg);
+            }
+
+            95% {
+                transform: translate(-280%, 150%) skew(-5deg);
+            }
+
+            98.5% {
+                transform: translate(-280%, 150%) skew(-2.5deg);
+            }
+
+            100% {
+                transform: translate(-280%, 150%) skew(0,0);
             }
         }
 
@@ -27,60 +62,91 @@
         .CallingCard {
             /*Positioning*/
             position: absolute;
-            top: 23%;
-            left: 30%;
+            left: 50%;
+            top: 50%;
+            margin-top: -11%;
+            margin-left: -20%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
             
-        
+            
             /*Dimensions*/
             width: 40%;
-            height: 48%;
-
-            /*Background*/
-            background-image: url(Assets/CallingCardBG.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+            height: 40%;
 
             /*Misc*/
             border: 1px solid rgb(0, 0, 0);
             overflow: hidden;
+            
+            
 
             /*Animation Effects*/
-            transform: rotate(8deg);
-            
             animation-name: spinTheCard;
-            animation-duration: 3.4s;
-            animation-timing-function: ease-out;
-            animation-iteration-count: 1; 
-            
-            transition: transform .6s;
-        
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(.32,.88,.49,1.39);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+      
         }
-
-        .CallingCard :hover {
-            transform: scale(1.25);
-        }
-
-        .CallingCard .Logo :hover {
-            transform: scale(1.15);
-            
-        }
-
-
 
         .CallingCard .Logo {
-            padding: 30px 0;
-            text-align: center;
-            width: 100%;
+            position: absolute;
+            height: 75%;
+            width: 40%;
         }
+
+        .CallingCard .Logo:hover {
+            transform: scale(1.2);
+        }
+
+        .dagger {
+            /*Positioning*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -50%;
+            margin-left: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+            /*Dimensions*/
+            width: 14%;
+            height: 40%;
+
+            /*Animation Effects*/
+            animation-name: daggerThrow;
+            animation-duration: .13s;
+            animation-delay: 2.2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+        }
+
     </style>
 </head>
 <body>
     <div class="CallingCard">
+        <img src="Assets/CallingCardBG.jpg" 
+        alt="Background of the card depicting a spiral with red and black"
+        width="100%">
+
         <div class="Logo">
-            <img src="Assets/Phantom-Thieves-of-Hearts-Logo.png" alt="Logo of the Phantom Thieves, depicting a tophat
-             with a mask below it and the phrase: Take Your Heart!" width="300px">
+            <a href="MainPage.html">
+            <img src="Assets/Phantom-Thieves-of-Hearts-Logo.png" 
+            alt="Logo of the Phantom Thieves, depicting a tophat
+            with a mask below it and the phrase: Take Your Heart!" width="100%">
+            </a>
         </div>
+    </div>
+
+    <div class="dagger">
+        <img src="Assets/daggerP5.png" alt="Smol cartoon dagger" width="100%">
     </div>
 </body>
 </html>
