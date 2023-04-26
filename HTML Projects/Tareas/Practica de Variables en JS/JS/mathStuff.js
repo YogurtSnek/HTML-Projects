@@ -89,7 +89,7 @@ document.writeln(numbers2+"<br>")
 
 document.writeln("<br><u>Second Array element by element but filtered with only numbers less than 5</u><br>")
 var filteredNums = secndArr.filter(filterFunc)
-document.writeln(filteredNums + "<br>")
+document.writeln(filteredNums +)
 function filterFunc (value, index, array) {
     return value < 5
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salida de Datos y Cadena de carácteres</title>
+</head>
+<body>
+    <h1>Salida de Datos</h1>
+    <p id = "mostrar">Parrafo que no se publicará en la página web</p>
+    <p id = "muestra"></p>
+    <script>
+        document.writeln("Este texto se inserta en la página web con la función document.write");
+        alert("Cuadro de avisos donde podemos realizar anuncios");
+        document.getElementById("mostrar").innerHTML = "Texto ingresado utilizando el DOM";
+
+        function saluda(){
+            document.getElementById("muestra").innerHTML = "<h1>Buen día, navegador de la internet</h1>";
+        }
+
+        function edad(){
+            document.writeln("<h3>¿Puedes votar?</h3>");
+            var edad;
+            e = prompt("Ingresa la edad que ahora tienes, por favor");
+
+            if (e >= 18){
+                document.writeln("<br>Eres mayor de edad, puedes votar");
+            } else {
+                document.writeln("<br>Eres menor de edad, aún no votas");
+            }
+
+        }
+        
+        console.log("Son varias las posibilidades de dar salida a datos y mensajes usando JS/ECMA Script");
+    </script>
+    <br>
+    <hr>
+    <br>
+    <button type = "button" onclick = "saluda()">Realiza un saludo :></button>
+    <br>
+    <br>
+    <button type = "button" onclick = "edad()">¿Puedes votar?</button>
+    <br>
+    <hr>
+    <br>
+    <script src = "varArreglos.js"></script>
+</body>
+</html>

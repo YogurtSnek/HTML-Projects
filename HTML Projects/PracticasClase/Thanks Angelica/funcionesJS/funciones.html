@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de funciones con JavaScript</title>
+</head>
+<body>
+    <h1>Utilizar funciones en JavaScript</h1>
+
+    <script src = "funciones.js"></script>
+    <script>bienvenida();</script>
+
+    <p>La suma de x = 5 y y = 10 es:
+        <script>
+            var x = 5; 
+            var y = 10;
+            document.writeln(sumar(x, y));
+        </script>
+    </p>
+
+    <script>
+        var a = 10;
+        var b = 20;
+        document.writeln("<br><br>El valor de la variable a = " + a + " fuera de la función.");
+        document.writeln("<br><br>El valor de la variable b = " + b + " fuera de la función.");
+    
+        varLocales(a, b);
+        document.writeln("<br><br>El valor de la variable a = " + a + " fuera y después de la función.");
+        document.writeln("<br><br>El valor de la variable b = " + b + " fuera y después de la función.");
+    
+        document.writeln("<br><br><br>La temperatura es " + aCentigradosDeFahrenheit(78) + " centigrados");
+    </script>
+</body>
+</html> 
