@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstration of Functions in JS</title>
+</head>
+<body>
+    <h1>Functions in JS</h1>
+    <h3>We will provide examples of uses of these functions</h3>
+    <br><hr>
+    <p id="e1">Example 1:</p>
+    <button type="button" onclick="spook()">You should click me</button>
+    <hr>
+    <p id="e2">Example 2:</p>
+    <button type="button" onclick="hello()">You should click me</button>
+    <hr>
+    <p id="e3">Example 3:</p>
+    <input type="text" id="num1"> + <input type="text" id="num2"> <button type="button" onclick="sum()"> = </button> <input type="text" id="result" readonly> 
+    <hr>
+    <p id="e4">Example 4:</p>
+    <hr>
+    <p id="e5">Example 5:</p>
+    <hr>
+
+    <script>
+        var result;
+
+        function spook() {
+            document.getElementById("e1").innerHTML += "<br><i><h2>AAA squiggly spooky text</h2></i>"
+        }
+
+        function hello() {
+            var name = prompt("Please tell me your name!")
+            document.getElementById("e2").innerHTML += "<br><i>Hello " + name + "!</i>"
+        }
+
+        function sum() {
+            result = Number(document.getElementById.value) + Number(document.getElementById("num1").value)
+            document.getElementById("result").value = result
+        }
+    </script>
+
+</body>
+</html>
