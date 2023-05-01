@@ -58,6 +58,38 @@
             }
         }
 
+        @keyframes daggerThrowPhone {
+            0% {
+                transform: translate(0, 0) skew(0,0);
+            }
+
+            85% {
+                transform: translate(-280%, 60%) skew(5deg);
+            }
+
+            88.5% {
+                transform: translate(-280%, 60%) skew(2.5deg);
+            }
+
+            90% {
+                transform: translate(-280%, 60%) skew(0deg);
+            }
+            92.5% {
+                transform: translate(-280%, 60%) skew(-2.5deg);
+            }
+
+            95% {
+                transform: translate(-280%, 60%) skew(-5deg);
+            }
+
+            98.5% {
+                transform: translate(-280%, 60%) skew(-2.5deg);
+            }
+
+            100% {
+                transform: translate(-280%, 60%) skew(0,0);
+            }
+        }
 
         .CallingCard {
             /*Positioning*/
@@ -120,12 +152,30 @@
 
             /*Animation Effects*/
             animation-name: daggerThrow;
-            animation-duration: .13s;
+            animation-duration: .11s;
             animation-delay: 2.2s;
             animation-timing-function: linear;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
 
+        }
+
+        @media screen and (max-width: 600px) {
+            .CallingCard { 
+                width: 40%;
+                height: 20%;
+
+                
+            }
+
+            .dagger {
+                width: 10%;
+                height: 35%;
+
+                animation-name: daggerThrowPhone;
+            }
+
+            
         }
 
     </style>
