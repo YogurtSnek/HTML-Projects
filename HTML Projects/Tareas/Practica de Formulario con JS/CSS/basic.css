@@ -1,0 +1,23 @@
+body {
+    background-color: #060238;
+    font-family: 'Sofia', cursive; 
+    font-size: 22px;
+    color: white;
+    
+}
+
+fieldset {
+    width: 600px;
+}
+
+#checkboxList {
+    text-align:left; 
+    width: 420px; 
+    margin: auto;
+}
+
+#questions {
+    text-align: center; 
+    margin: auto; 
+    width: fit-content;
+}
