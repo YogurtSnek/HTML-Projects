@@ -1,13 +1,18 @@
 body {
-    background-color: #060238;
+    background-color: rgb(252, 201, 252);
     font-family: 'Sofia', cursive; 
     font-size: 22px;
-    color: white;
+    color: rgb(131, 52, 114);
     
 }
 
 fieldset {
     width: 600px;
+}
+
+#header img {
+    position: absolute;
+    float: left;
 }
 
 #checkboxList {
