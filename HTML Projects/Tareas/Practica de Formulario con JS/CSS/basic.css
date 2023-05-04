@@ -85,7 +85,7 @@ fieldset {
 
     } 
     to {
-        transform: translate(200%, 0%)
+        transform: translate(100%, 0%)
     }
 }
 
@@ -95,6 +95,6 @@ fieldset {
 
     } 
     to {
-        transform: translate(-200%, 0%)
+        transform: translate(-100%, 0%)
     }
 }
