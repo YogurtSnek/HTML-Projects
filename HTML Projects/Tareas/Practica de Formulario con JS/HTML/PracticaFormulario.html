@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Formulario: game Taste</title>
+        <title>Formulario: Quality Tester</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
             </div>
             <div id="questions" class="questions">
                 <form action="#" method="GET">
-                    <div id="question">
+                    <div class="question">
                         <fieldset>
                             <legend> General Information </legend>
                             Your Name: <input type="text" name="Nombre" placeholder="First Name">
@@ -27,21 +27,26 @@
                             Phone Number: <input type="tel" name="phone" id="phone" pattern="(686-)^[0-9]{3}-[0-9]{4}" placeholder="686-XXX-XXXX">
                         </fieldset>
                     </div>
+                    <div class="question">
+                        <fieldset>
+                            <legend> Question 1 </legend>
+                            Which of the following games have you played?
+                            <div id="checkboxList">
+                                <input type="checkbox" id="game" name="game1" value="Dragon Ball"><label for="game">Dragon Ball</label>
+                                <br><input type="checkbox" id="game" name="game2" value="Konosuba"><label for="game">Konosuba</label>
+                                <br><input type="checkbox" id="game" name="game3" value="Miss Kobayashi's Dragon Maid"><label for="game">Miss Kobayashi's Dragon Maid</label>
+                                <br><input type="checkbox" id="game" name="game4" value="Chainsaw Man"><label for="game">Chainsaw Man</label>
+                                <br><input type="checkbox" id="game" name="nogame" value="None"><label for="game">None</label>
+                            </div>
+                        </fieldset>
+                    </div>
                     
+                </form>
+            </div>
     
                     <br>
-    
-                    <fieldset>
-                        <legend> Question 1 </legend>
-                        Which of the following games have you played?
-                        <div id="checkboxList">
-                            <input type="checkbox" id="game" name="game1" value="Dragon Ball"><label for="game">Dragon Ball</label>
-                            <br><input type="checkbox" id="game" name="game2" value="Konosuba"><label for="game">Konosuba</label>
-                            <br><input type="checkbox" id="game" name="game3" value="Miss Kobayashi's Dragon Maid"><label for="game">Miss Kobayashi's Dragon Maid</label>
-                            <br><input type="checkbox" id="game" name="game4" value="Chainsaw Man"><label for="game">Chainsaw Man</label>
-                            <br><input type="checkbox" id="game" name="nogame" value="None"><label for="game">None</label>
-                        </div>
-                    </fieldset>
+                    <!--
+                    
     
                         <br><br>
     
@@ -86,14 +91,15 @@
                     
                 </form>
             </div>
-    
+            -->
             <div class="left">
-                Left <
+                < Prev.
             </div>
     
             <div class="right">
-                Right >
+                Next >
             </div>
+
         </div>
     </body>
 </html>
