@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Limit Events</title>
+    <style>
+        body {
+            font-family: A arial, helvetica;
+        }
+    </style>
+    <script>
+        function limita(elEvento, maximoCaracteres) {
+            var elemento = document.getElementById("TextZone")
+            var evento = elEvento || window.event
+            var codigoCaracter = evento.charCode || evento.keyCode
+            if (codigoCaracter == 37 || codigoCaracter == 39) {
+                return true
+            } 
+            
+            if (codigoCaracter == 8 || codigoCaracter == 46) {
+                return true
+            } else if (elemento.value.length >= maximoCaracteres) {
+                return false
+            } else {
+                return true
+            }
+
+            function actualizaInfo(maximoCaracteres) {
+                var elemento = document.getElementById("TextZone")
+                var info = document.getElementById("info")
+                if (elemento.value.length >= maximoCaracteres) {
+                    info.innerHTML = "Maximo " + maximoCaracteres + " caracteres"
+                } else {
+                    info.innerHTML = "Puedes escribir hasta " + (maximoCaracteres - elemento.value.length) + " caracteres adicionales."
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="info">
+        <textarea id="TextZone" cols="30" rows="10">
+
+        </textarea>
+    </div>
+</body>
+</html>
