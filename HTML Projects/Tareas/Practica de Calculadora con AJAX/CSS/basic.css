@@ -1,0 +1,27 @@
+* {
+    text-align: center;
+}
+
+
+/* Summation */
+#Summation-Limit {
+    position: inline;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+#Summation-startingValue {
+    position: inline;
+    width: 25px;
+}
+
+#Summation-Symbol {
+    position: inline;
+}
+
+/*Factorial*/
+#Factorial-ToDisplay {
+    position: inline;
+    width: 60px;
+}
