@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/basic.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Advanced Calculations:</h1>
+    <div class="Summation-Container">
+        <h2>Summation:</h2>
+        <p>Limit: </p>
+        <input type="text" id="Summation-Limit">
+        <img src="Assets/800px-Greek_uc_sigma.svg.png" width="100px" alt="Sigma Symbol Representing a Summation">
+        <p><i>i = </i></p>
+        <input type="text" id="Summation-startingValue">
+        <input type="text" id="Summation">
+        <button type="submit">Start Summation</button>
+    </div>
+    
+    <div class="Fibonacci-Container">
+        <h2>Fibonacci Sequence:</h2>
+        <p id="Fibonacci-ToDisplay">F<sub>0</sub> <ion-icon name="arrow-forward-outline"></ion-icon> F<sub>19</sub></p>
+        <input type="text" id="Fibonacci-Sequence" readonly>
+        <button type="submit">Start Fibonacci</button>
+    </div>
+
+    <div class="Factorial-Container">
+        <h2>Factorial:</h2>
+        <input type="text" id="Factorial-ToDisplay">
+        <p>!</p>
+        <input type="text" id="Factorial" readonly>
+        <button type="submit">Start Factorial</button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
