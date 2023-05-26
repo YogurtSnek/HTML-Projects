@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>The XMLHttpRequest Object</h2>
+
+    <div id="demo">
+    <p>AJAX realizará cambios en el texto.</p>
+    <button type="button" onclick="loadDoc()">Cambiar contenido</button>
+    </div>
+
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.onload = function() {
+            document.getElementById("demo").innerHTML = this.responseText;
+            }
+
+            xhttp.open("GET", "infoAJAX.txt");
+            xhttp.send();
+        }
+    </script>
+</body>
+
+</html>
