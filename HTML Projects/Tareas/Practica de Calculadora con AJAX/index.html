@@ -20,9 +20,11 @@
         <p style="margin: 0; padding: 0; padding-bottom: 5px;"><i>i = </i>
             <input type="text" id="Summation-startingValue">
         </p>
-        <input type="text" id="Summation">
+        <input type="text" placeholder="Result" id="Summation">
         <br><br>
-        <button type="submit">Start Summation</button>
+        <textarea id="Summation-Procedure" cols="30" rows="10"></textarea>
+        <br><br>
+        <button type="button" onclick="Summation()">Start Summation</button>
     </div>
 
     <hr>
@@ -30,9 +32,11 @@
     <div class="Fibonacci-Container">
         <h2>Fibonacci Sequence:</h2>
         <p id="Fibonacci-ToDisplay">F<sub>0</sub> <ion-icon name="arrow-forward-outline"></ion-icon> F<sub>19</sub></p>
-        <input type="text" id="Fibonacci-Sequence" readonly>
+        <input type="text" placeholder="Result" id="Fibonacci-Sequence" readonly>
         <br><br>
-        <button type="submit" id="Fibonacci-Start">Start Fibonacci</button>
+        <textarea id="Fibonacci-Procedure" cols="30" rows="10"></textarea>
+        <br><br>
+        <button type="button" onclick="Fibonacci()" id="Fibonacci-Start">Start Fibonacci</button>
     </div>
 
     <hr>
@@ -42,11 +46,15 @@
         <p>
         <input type="text" id="Factorial-ToDisplay">
         !</p>
-        <input type="text" id="Factorial" readonly>
+        <input type="text" placeholder="Result" id="Factorial" readonly>
         <br><br>
-        <button type="submit" id="Factorial-Start">Start Factorial</button>
+        <textarea id="Factorial-Procedure" cols="30" rows="10"></textarea>
+        <br><br>
+        <button type="button" onclick="Factorial()" id="Factorial-Start">Start Factorial</button>
     </div>
 
+
+    <script src="JS/buttonActions.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
